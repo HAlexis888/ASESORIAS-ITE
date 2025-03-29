@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITE Asesorías</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><center>ITE ASESORIAS</div></center>
+    </div>
+    
+    <div class="access-options">
+        <div class="access-card" onclick="location.href='/login/alumno'">
+            <p>ALUMNO</p>
+            <button class="login-btn">INGRESAR</button>
+        </div>
+        
+        <div class="access-card" onclick="location.href='/login/docente'">
+            <p>DOCENTE</p>
+            <button class="login-btn">INGRESAR</button>
+        </div>
+        
+        <div class="access-card" onclick="location.href='/login/admin'">
+            <p>ADMINISTRADOR</p>
+            <button class="login-btn">INGRESAR</button>
+        </div>
+    </div>
+
+    <a href="/crear_cuenta" class="next-link">No tienes cuenta? Crea una aqui<br><br></a>
+</body>
+</html>
