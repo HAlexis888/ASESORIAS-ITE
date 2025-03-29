@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body> 
+    <div class="create_header">
+        <h1>Crear cuenta</h1>
+    </div>
+    <form method="POST">
+        <div>
+            <label>Elige tu tipo de cuenta:</label>
+            <select id="opciones" name="opciones" class="seleccion-cuenta">
+                <option value="alumno">ALUMNO</option>
+                <option value="asesor">ASESOR</option>
+                <option value="administrador">ADMINISTRADOR</option>
+            </select>
+        <div>
+            <label>Nombre Completo: </label>
+            <input type="text" name="Nombre">
+        </div>
+        <div>
+            <label>Numero de control:</label>
+            <input type="number" name="num_control">
+        </div>    
+        <div>
+            <label>ID:</label>
+            <input type="number" name="id_asesor">
+        </div>
+        </div>
+        <div class="form-group">
+            <label>Correo electrónico:</label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label>Contraseña:</label>
+            <input type="password" name="password" required>
+        </div>
+    
+        <button type="submit">Registrar</button>
+    </form>
+    
+</body>
+
+</html>
