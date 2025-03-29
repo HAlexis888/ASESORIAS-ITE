@@ -8,7 +8,14 @@ usuarios = {}
 def home():
     return render_template("index.html")  # Carga el archivo en /templates/index.html
 
+@app.route('/crear_cuenta')
+def crear_cuenta():
+    return render_template("crear_cuenta.html")
+
+
 @app.route('/login/<rol>', methods=['GET', 'POST'])
+
+
 def login(rol):
     if request.method == 'POST':
         correo = request.form['correo_electronico']
